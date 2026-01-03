@@ -59,12 +59,16 @@
   
   .omikuji-result {
     margin-bottom: 30px;
-    animation: shake 2.5s 2s ease-in-out 2;
   
     > img {
       width: auto;
       height: 300px;
     }
+  }
+
+  /* クラスがついた時だけアニメーションを実行する */
+    .is-shaking {
+        animation: shake 0.5s 0s ease-in-out 2;
   }
   
   .omikuji-button {
