@@ -46,6 +46,23 @@
       padding: 10px;
     }
   }
+
+  .omikuji-result-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #E93429;
+    height: 48px; /* 表示領域を確保 */
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.5s ease-out;
+  }
+  
+  /* 表示される時のアニメーション用クラス */
+  .is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
   
   @keyframes shake {
     0% { transform: rotate(0deg); }
@@ -74,7 +91,7 @@
    /* ルーレット回転中のスタイル */
     .is-spinning {
         filter: blur(0.5px); /* 軽くボカシを入れる */
-        transform: scale(1.05); /* 少しだけ浮かせる */
+        /* transform: scale(1.05); 少しだけ浮かせる */
         transition: filter 0.1s linear;
   } 
   
