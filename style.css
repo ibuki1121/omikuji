@@ -70,6 +70,13 @@
     .is-shaking {
         animation: shake 0.5s 0s ease-in-out 2;
   }
+
+   /* ルーレット回転中のスタイル */
+    .is-spinning {
+        filter: blur(0.5px); /* 軽くボカシを入れる */
+        transform: scale(1.05); /* 少しだけ浮かせる */
+        transition: filter 0.1s linear;
+  } 
   
   .omikuji-button {
     padding: 10px 20px;
